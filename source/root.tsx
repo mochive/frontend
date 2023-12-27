@@ -21,6 +21,7 @@ export default component$(function (): JSXNode {
 			<meta property='og:title' content='Mochive' />
 			<meta property='og:type' content='website' />
 			<meta property='og:description' content='모의고사 아카이브' />
+			<meta property='og:image' content='https://mochive.com/ogImage' />
 			<meta property='twitter:card' content='summary_large_image' />
 		</head>
 		<body lang='ko'>
