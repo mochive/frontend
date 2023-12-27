@@ -1,0 +1,29 @@
+.footer {
+	background-color: #e1e2e6;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	height: 10lvh;
+}
+
+.footer > p {
+	display: flex;
+	align-items: center;
+}
+
+.footer > div {
+	display: flex;
+	gap: 8px;
+}
+
+.icon {
+	height: 1rem;
+}
+
+.footer a, .footer a:active, .footer a:visited {
+	text-decoration: none;
+	color: #124658;
+	font-weight: 500;
+}

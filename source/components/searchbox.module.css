@@ -1,0 +1,89 @@
+.searchBox {
+	width: 100%;
+	max-width: 1000px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+}
+
+.search {
+	height: 26px;
+	padding: 8px 16px 8px 16px;
+	cursor: pointer;
+	fill: #0e3746;
+}
+
+.startInput, .endInput {
+	width: 3.5rem;
+	font-size: 1rem;
+	border: 0;
+	color: #0e3746;
+	text-decoration: underline;
+}
+
+.endInput {
+	margin-right: -16px;
+}
+
+.resetInput {
+	text-align: center;
+	width: 3rem;
+	color: #0e3746;
+	cursor: pointer;
+	margin-left: -1rem;
+}
+
+.inputContainer {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 8px;
+}
+
+.yearContainer {
+	max-width: 600px;
+	width: 80%;
+}
+
+.term {
+	background-color: #f5f2eb;
+	border-radius: 32px;
+	height: 40px;
+	max-width: 660px;
+	margin-bottom: 16px;
+	width: calc(100% - 16px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.term > input {
+	margin-left: 16px;
+	width: 100%;
+	border: 0;
+	background-color: transparent;
+	font-size: 1.2rem;
+}
+
+.option {
+	display: flex;
+	gap: 4px;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0 8px;
+}
+
+.icon {
+	height: 1.1rem;
+}
+
+@media (width <= 550px) {
+	.icon {
+		height: 1rem;
+	}
+	.term > input {
+		font-size: 1.1rem;
+	}
+}

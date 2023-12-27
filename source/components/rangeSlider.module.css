@@ -1,0 +1,130 @@
+.rangeSlider {
+	position: relative;
+	height: 20px;
+	width: 100%;
+}
+
+.pointer {
+	appearance: none;
+	width: 100%;
+	margin: 0;
+	border: none;
+	background: none;
+	pointer-events: none;
+	position: absolute;
+}
+
+.pointer:nth-child(2) {
+	background: none;
+}
+
+.rangeSlider:hover > .pointer::-webkit-slider-thumb {
+	background-color: #18566e;
+}
+
+.rangeSlider:active > .pointer::-webkit-slider-thumb {
+	background-color: #103d4d;
+}
+
+.pointer::-webkit-slider-thumb {
+	height: 20px;
+	width: 20px;
+	border-radius: 100%;
+	background-color: #124658;
+	cursor: pointer;
+	appearance: none;
+	pointer-events: all;
+}
+
+.rangeSlider:hover > .pointer::-moz-range-thumb {
+	background-color: #18566e;
+}
+
+.rangeSlider:active > .pointer::-moz-range-thumb {
+	background-color: #103d4d;
+}
+
+.pointer::-moz-range-thumb {
+	height: 20px;
+	width: 20px;
+	border-radius: 100%;
+	background-color: #124658;
+	cursor: pointer;
+	appearance: none;
+	pointer-events: all;
+}
+
+.rangeSlider:hover > .pointer::-ms-thumb {
+	background-color: #18566e;
+}
+
+.rangeSlider:active > .pointer::-ms-thumb {
+	background-color: #103d4d;
+}
+
+.pointer::-ms-thumb {
+	height: 20px;
+	width: 20px;
+	border-radius: 100%;
+	background-color: #124658;
+	cursor: pointer;
+	appearance: none;
+	pointer-events: all;
+}
+
+.fill {
+	height: 8px;
+	background-color: #124658;
+	position: absolute;
+	top: 6px;
+	left: 0;
+	pointer-events: none;
+}
+
+.background {
+	z-index: -1;
+	height: 8px;
+	left: 1px;
+	width: calc(100% - 3px);
+	top: 5px;
+	border-radius: 16px;
+	background-color: #efefef;
+	border: 1px solid #b2b2b2;
+	position: absolute;
+}
+
+.rangeSlider:hover > .fill {
+	background-color: #18566e;
+}
+
+.rangeSlider:active > .fill {
+	background-color: #103d4d;
+}
+
+/*.rangeSlider:hover > .background {
+	background-color: #f3f3f3;
+}*/
+
+@media (width <= 550px) {
+	.rangeSlider {
+		height: 18px;
+	}
+	.pointer::-webkit-slider-thumb {
+		width: 18px;
+		height: 18px;
+	}
+	.pointer::-moz-range-thumb {
+		width: 18px;
+		height: 18px;
+	}
+	.pointer::-ms-thumb {
+		width: 18px;
+		height: 18px;
+	}
+	.fill {
+		height: 6px;
+	}
+	.background {
+		height: 6px;
+	}
+}

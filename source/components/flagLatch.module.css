@@ -1,0 +1,32 @@
+.flagLatch {
+	background-color: #F4F2EC;
+	color: #000000;
+	border-radius: 16px;
+	/*text-align: center;*/
+	padding: 2px 10px;
+	font-size: 1.1rem;
+	border: 0;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flagLatch:hover:not(.active) {
+	background-color: #eeece6;
+}
+
+.active:hover {
+	background-color: #175a70;
+}
+
+.active {
+	background-color: #124658;
+	color: #ffffff;
+}
+
+@media (width <= 550px) {
+	.flagLatch {
+		font-size: 1rem;
+	}
+}

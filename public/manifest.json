@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+  "name": "Mochive",
+  "short_name": "Mochive",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#EC9F74",
+  "description": "Mock test archive"
+}
