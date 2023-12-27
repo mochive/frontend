@@ -19,11 +19,11 @@
 }
 
 .rangeSlider:hover > .pointer::-webkit-slider-thumb {
-	background-color: #18566e;
+	background-color: #18566E;
 }
 
 .rangeSlider:active > .pointer::-webkit-slider-thumb {
-	background-color: #103d4d;
+	background-color: #103D4D;
 }
 
 .pointer::-webkit-slider-thumb {
@@ -37,11 +37,11 @@
 }
 
 .rangeSlider:hover > .pointer::-moz-range-thumb {
-	background-color: #18566e;
+	background-color: #18566E;
 }
 
 .rangeSlider:active > .pointer::-moz-range-thumb {
-	background-color: #103d4d;
+	background-color: #103D4D;
 }
 
 .pointer::-moz-range-thumb {
@@ -55,11 +55,11 @@
 }
 
 .rangeSlider:hover > .pointer::-ms-thumb {
-	background-color: #18566e;
+	background-color: #18566E;
 }
 
 .rangeSlider:active > .pointer::-ms-thumb {
-	background-color: #103d4d;
+	background-color: #103D4D;
 }
 
 .pointer::-ms-thumb {
@@ -88,22 +88,18 @@
 	width: calc(100% - 3px);
 	top: 5px;
 	border-radius: 16px;
-	background-color: #efefef;
-	border: 1px solid #b2b2b2;
+	background-color: #EFEFEF;
+	border: 1px solid #B2B2B2;
 	position: absolute;
 }
 
 .rangeSlider:hover > .fill {
-	background-color: #18566e;
+	background-color: #18566E;
 }
 
 .rangeSlider:active > .fill {
-	background-color: #103d4d;
+	background-color: #103D4D;
 }
-
-/*.rangeSlider:hover > .background {
-	background-color: #f3f3f3;
-}*/
 
 @media (width <= 550px) {
 	.rangeSlider {

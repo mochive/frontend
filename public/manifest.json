@@ -4,6 +4,7 @@
   "short_name": "Mochive",
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#EC9F74",
+	"background_color": "#FFFFFF",
+  "theme_color": "#F5F2EB",
   "description": "Mock test archive"
 }

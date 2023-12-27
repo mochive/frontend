@@ -2,7 +2,6 @@
 	background-color: #F4F2EC;
 	color: #000000;
 	border-radius: 16px;
-	/*text-align: center;*/
 	padding: 2px 10px;
 	font-size: 1.1rem;
 	border: 0;
@@ -13,16 +12,16 @@
 }
 
 .flagLatch:hover:not(.active) {
-	background-color: #eeece6;
+	background-color: #EEECE6;
 }
 
 .active:hover {
-	background-color: #175a70;
+	background-color: #175A70;
 }
 
 .active {
 	background-color: #124658;
-	color: #ffffff;
+	color: #FFFFFF;
 }
 
 @media (width <= 550px) {

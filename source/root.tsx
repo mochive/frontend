@@ -10,7 +10,18 @@ export default component$(function (): JSXNode {
 			<meta charset='UTF-8' />
 			<meta http-equiv='X-UA-Compatible' content='IE=edge' />
 			<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+			<link rel='icon' href='favicon.svg' />
+			<link rel='mask-icon' href='favicon-mask.svg' />
+			<link rel='shortcut icon' href='favicon.ico' />
+			<link rel='apple-touch-icon' href='apple-touch-icon.png' />
+			<meta name='theme-color' content='#F5F2EB' />
 			<title>Mochive</title>
+			<meta name="description" content="모의고사 아카이브" />
+			<meta name="keywords" content="모의고사, 모의평가, 모고, 모평, 전국연합학력평가, 학력평가, 대학수학능력시험, 수능, ebs, ebsi" />
+			<meta property='og:title' content='Mochive' />
+			<meta property='og:type' content='website' />
+			<meta property='og:description' content='모의고사 아카이브' />
+			<meta property='twitter:card' content='summary_large_image' />
 		</head>
 		<body lang='ko'>
 			<RouterOutlet />
