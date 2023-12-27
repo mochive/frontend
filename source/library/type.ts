@@ -5,6 +5,7 @@ export interface Test {
 	subject: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
 	name: string;
 	question: string;
+	answer?: string;
 	commentary: string;
 	takenAt: string;
 }
@@ -13,7 +14,7 @@ export interface TestListening {
 	id: number;
 	testId: number;
 	audio: string;
-	script: string | null;
+	script?: string;
 }
 
 export interface TestRankcut {

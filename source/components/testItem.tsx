@@ -1,4 +1,4 @@
-import { JSXNode, component$ } from '@builder.io/qwik';
+import { JSXNode, component$, useVisibleTask$ } from '@builder.io/qwik';
 import { Test, TestListening } from '~/library/type';
 import Korean from '~/assets/korean.svg';
 import Mathematics from '~/assets/mathematics.svg';
@@ -10,6 +10,7 @@ import VocationalEducation from '~/assets/vocationalEducation.svg';
 import SecondForeignLanguage from '~/assets/secondForeignLanguage.svg';
 import TestItem from './testItem.module.css';
 import Question from '~/assets/question.svg';
+import Answer from '~/assets/answer.svg';
 import Commentary from '~/assets/commentary.svg';
 import Audio from '~/assets/audio.svg';
 import Script from '~/assets/script.svg';
@@ -79,9 +80,14 @@ export default component$(function (properties: {
 		}
 	}
 	
+
+	useVisibleTask$(function () {
+		
+	console.log()
+	})
 	return <li class={TestItem['testItem']}>
 			{icon}
-		<div>
+		<div class='nonSelectable'>
 			<h1 class={TestItem['name']}>{properties['value']['name']}</h1>
 			<p class={TestItem['takenAt']}>{properties['value']['takenAt']}</p>
 		</div>
@@ -93,19 +99,20 @@ export default component$(function (properties: {
 					{/* @ts-expect-error */}
 					<a target='_blank' href={'https://wdown.ebsi.co.kr/W61001/01exam' + properties['value']['question']} download><Question class={TestItem['buttonIcon']} /></a>
 					{/* @ts-expect-error */}
-					<a target='_blank' href={'https://wdown.ebsi.co.kr/W61001/01exam' + properties['value']['commentary']} download><Commentary class={TestItem['buttonIcon']} /></a>
+					{!properties['value']['name'].endsWith('짝수형') ? <a target='_blank' href={'https://wdown.ebsi.co.kr/W61001/01exam' + properties['value']['commentary']} download><Commentary class={TestItem['buttonIcon']} /></a> : <a target='_blank' href={'https://wdown.ebsi.co.kr/W61001/01exam' + properties['value']['answer']} download><Answer class={TestItem['buttonIcon']} /></a>}
+					{/*<a target='_blank' href={'https://wdown.ebsi.co.kr/W61001/01exam' + properties['value']['commentary']} download><Commentary class={TestItem['buttonIcon']} /></a>*/}
 				</div>
 				<div>
 					{/* @ts-expect-error */}
 					<a target='_blank' href={'https://wdown.ebsi.co.kr/W61001/01exam' + properties['value']['listening']['audio']} download><Audio class={TestItem['buttonIcon']} /></a>
 					{/* @ts-expect-error */}
-					<a target='_blank' href={'https://wdown.ebsi.co.kr/W61001/01exam' + properties['value']['listening']['script']} download><Script class={TestItem['buttonIcon']} /></a>
+					{typeof(properties['value']['listening']['script']) === 'string' ? <a target='_blank' href={'https://wdown.ebsi.co.kr/W61001/01exam' + properties['value']['listening']['script']} download><Script class={TestItem['buttonIcon']} /></a> : <a class={TestItem['disabled']} preventdefault:click><Script class={TestItem['buttonIcon']} /></a>}
 				</div>
 			</> : <>
 				{/* @ts-expect-error */}
 				<a target='_blank' href={'https://wdown.ebsi.co.kr/W61001/01exam' + properties['value']['question']} download><Question class={TestItem['buttonIcon']} /><p>&nbsp;문제</p></a>
 				{/* @ts-expect-error */}
-				<a target='_blank' href={'https://wdown.ebsi.co.kr/W61001/01exam' + properties['value']['commentary']} download><Commentary class={TestItem['buttonIcon']} /><p>&nbsp;해설</p></a>
+				{!properties['value']['name'].endsWith('짝수형') ? <a target='_blank' href={'https://wdown.ebsi.co.kr/W61001/01exam' + properties['value']['commentary']} download><Commentary class={TestItem['buttonIcon']} /><p>&nbsp;해설</p></a> : <a target='_blank' href={'https://wdown.ebsi.co.kr/W61001/01exam' + properties['value']['answer']} download><Answer class={TestItem['buttonIcon']} /><p>&nbsp;정답</p></a>}
 			</>}
 		</div>
 	</li>;

@@ -67,19 +67,28 @@
 	text-decoration: none;
 }
 
-.button > div {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	min-width: 45px;
-}
-
 .button a:hover {
 	background-color: #18566e;
 }
 
 .button a:active {
 	background-color: #103d4d;
+}
+
+.button .disabled, .button .disabled:hover, .button .disabled:active {
+	background-color: #06161b;
+	cursor: default;
+}
+
+.disabled > svg {
+	opacity: 0.3;
+}
+
+.button > div {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	min-width: 45px;
 }
 
 .button > a:first-child {
