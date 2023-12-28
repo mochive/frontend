@@ -27,3 +27,15 @@
 	color: #006BA6;
 	font-weight: 500;
 }
+
+@media (width <= 630px) {
+	.footer {
+		font-size: 0.9rem;
+	}
+	.icon {
+		height: 0.9rem;
+	}
+	.footer > div {
+		gap: 4px;
+	}
+}
