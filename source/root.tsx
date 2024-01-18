@@ -16,13 +16,15 @@ export default component$(function (): JSXNode {
 			<link rel='apple-touch-icon' href='apple-touch-icon.png' />
 			<meta name='theme-color' content='#F5F2EB' />
 			<title>Mochive</title>
-			<meta name="description" content="모의고사 아카이브" />
+			<meta name="description" content="모카이브: 모의고사 아카이브" />
 			<meta name="keywords" content="모의고사, 모의평가, 모고, 모평, 전국연합학력평가, 학력평가, 대학수학능력시험, 수능, ebs, ebsi" />
-			<meta property='og:title' content='Mochive' />
 			<meta property='og:type' content='website' />
-			<meta property='og:description' content='모의고사 아카이브' />
+			<meta property='og:title' content='Mochive' />
+			<meta property='og:description' content='모카이브: 모의고사 아카이브' />
 			<meta property='og:image' content='https://mochive.com/ogImage.png' />
 			<meta property='twitter:card' content='summary_large_image' />
+			<meta property='twitter:title' content='Mochive' />
+			<meta property='twitter:description' content='모카이브: 모의고사 아카이브' />
 			<meta property='twitter:image' content='https://mochive.com/ogImage.png' />
 		</head>
 		<body lang='ko'>
