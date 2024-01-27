@@ -22,10 +22,10 @@ export default component$(function (): JSXNode {
 			<meta property='og:title' content='Mochive' />
 			<meta property='og:description' content='모카이브: 모의고사 아카이브' />
 			<meta property='og:image' content='https://mochive.com/ogImage.png' />
-			<meta property='twitter:card' content='summary_large_image' />
-			<meta property='twitter:title' content='Mochive' />
-			<meta property='twitter:description' content='모카이브: 모의고사 아카이브' />
-			<meta property='twitter:image' content='https://mochive.com/ogImage.png' />
+			<meta name='twitter:card' content='summary_large_image' />
+			<meta name='twitter:title' content='Mochive' />
+			<meta name='twitter:description' content='모카이브: 모의고사 아카이브' />
+			<meta name='twitter:image' content='https://mochive.com/ogImage.png' />
 		</head>
 		<body lang='ko'>
 			<RouterOutlet />
